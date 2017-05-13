@@ -1,0 +1,12 @@
+title: //h2[@class='article-title']/@content
+author: //span[@itemprop='author']//a[@class='username']/@content
+body: //article[@role="article"]
+
+requires_login: yes
+not_logged_in_xpath: //div[@class="block-abonnez-vous"]
+login_uri:https://www.canardpc.com/user/login
+login_username_field: name
+login_password_field: pass
+login_extra_fields: form_build_id=@=xpath('//form[@id="user-login-form"]//input[@name="form_build_id"]', request_html('https://www.canardpc.com/user/login'))
+login_extra_fields: form_id=user_login_form
+
