@@ -1,5 +1,6 @@
-title://h1[@class="h1"]
+title://meta[@property="og:title"]/@content
 body: //div[@class="contenu-principal"]/div[@class="texte"]
+author: //span[@class='auteurs']
 
 requires_login: yes
 
